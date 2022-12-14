@@ -100,12 +100,12 @@
         <td>
           <p-tableCheckbox [value]="user"></p-tableCheckbox>
         </td>
-        <td>{{ product.name }}</td>
-        <td>{{ product.price | currency: 'USD' }}</td>
-        <td>{{ product.category }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.price | currency: 'USD' }}</td>
+        <td>{{ user.category }}</td>
         <td>
           <p-rating
-            [ngModel]="product.rating"
+            [ngModel]="user.rating"
             [readonly]="true"
             [cancel]="false"
           ></p-rating>
@@ -113,9 +113,9 @@
         <td>
           <span
             [class]="
-              'product-badge status-' + product.inventoryStatus.toLowerCase()
+              'user-badge status-' + user.inventoryStatus.toLowerCase()
             "
-            >{{ product.inventoryStatus }}</span
+            >{{ user.inventoryStatus }}</span
           >
         </td>
         <td>
@@ -124,30 +124,30 @@
             pRipple
             icon="pi pi-pencil"
             class="p-button-rounded p-button-success p-mr-2"
-            (click)="editProduct(product)"
+            (click)="editUser(user)"
           ></button>
           <button
             pButton
             pRipple
             icon="pi pi-trash"
             class="p-button-rounded p-button-warning"
-            (click)="deleteProduct(product)"
+            (click)="deleteUser(user)"
           ></button>
         </td>
       </tr>
     </ng-template>
     <ng-template pTemplate="summary">
       <div class="p-d-flex p-ai-center p-jc-between">
-        In total there are {{ products ? products.length : 0 }} products.
+        In total there are {{ users ? users.length : 0 }} users.
       </div>
     </ng-template>
   </p-table>
 </div>
 
 <p-dialog
-  [(visible)]="productDialog"
+  [(visible)]="userDialog"
   [style]="{ width: '450px' }"
-  header="Product Details"
+  header="User Details"
   [modal]="true"
   styleClass="p-fluid"
 >
@@ -158,11 +158,11 @@
         type="text"
         pInputText
         id="name"
-        [(ngModel)]="product.name"
+        [(ngModel)]="user.name"
         required
         autofocus
       />
-      <small class="p-invalid" *ngIf="submitted && !product.name"
+      <small class="p-invalid" *ngIf="submitted && !user.name"
         >Name is required.</small
       >
     </div>
@@ -171,7 +171,7 @@
       <textarea
         id="description"
         pInputTextarea
-        [(ngModel)]="product.description"
+        [(ngModel)]="user.description"
         required
         rows="3"
         cols="20"
@@ -186,7 +186,7 @@
             id="category1"
             name="category"
             value="Accessories"
-            [(ngModel)]="product.category"
+            [(ngModel)]="user.category"
           ></p-radioButton>
           <label for="category1">Accessories</label>
         </div>
@@ -195,7 +195,7 @@
             id="category2"
             name="category"
             value="Clothing"
-            [(ngModel)]="product.category"
+            [(ngModel)]="user.category"
           ></p-radioButton>
           <label for="category2">Clothing</label>
         </div>
@@ -204,7 +204,7 @@
             id="category3"
             name="category"
             value="Electronics"
-            [(ngModel)]="product.category"
+            [(ngModel)]="user.category"
           ></p-radioButton>
           <label for="category3">Electronics</label>
         </div>
@@ -213,7 +213,7 @@
             id="category4"
             name="category"
             value="Fitness"
-            [(ngModel)]="product.category"
+            [(ngModel)]="user.category"
           ></p-radioButton>
           <label for="category4">Fitness</label>
         </div>
@@ -225,7 +225,7 @@
         <label for="price">Price</label>
         <p-inputNumber
           id="price"
-          [(ngModel)]="product.price"
+          [(ngModel)]="user.price"
           mode="currency"
           currency="USD"
           locale="en-US"
@@ -235,7 +235,7 @@
         <label for="quantity">Quantity</label>
         <p-inputNumber
           id="quantity"
-          [(ngModel)]="product.quantity"
+          [(ngModel)]="user.quantity"
         ></p-inputNumber>
       </div>
     </div>
@@ -256,7 +256,7 @@
       label="Save"
       icon="pi pi-check"
       class="p-button-text"
-      (click)="saveProduct()"
+      (click)="saveUser()"
     ></button>
   </ng-template>
 </p-dialog>
