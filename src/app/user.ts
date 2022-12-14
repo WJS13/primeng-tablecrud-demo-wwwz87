@@ -1,7 +1,7 @@
 export interface User {
     id?:string;
     dni?:number;
-    suername?:string;
+    surname?:string;
     name?:string;
     age?:number;
     salary?:number;
