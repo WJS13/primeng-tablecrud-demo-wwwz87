@@ -22,7 +22,7 @@ export class UserService {
   
   constructor(private http: HttpClient) {}
 
-  getProductsSmall() {
+  getUsersSmall() {
     return this.http
       .get<any>('assets/users-small.json')
       .toPromise()
