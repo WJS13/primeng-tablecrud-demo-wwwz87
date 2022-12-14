@@ -52,7 +52,7 @@
       'representative.name',
       'status'
     ]"
-    [(selection)]="selectedProducts"
+    [(selection)]="selectedUsers"
     [rowHover]="true"
     dataKey="id"
     currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
@@ -95,10 +95,10 @@
         <th></th>
       </tr>
     </ng-template>
-    <ng-template pTemplate="body" let-product>
+    <ng-template pTemplate="body" let-user>
       <tr>
         <td>
-          <p-tableCheckbox [value]="product"></p-tableCheckbox>
+          <p-tableCheckbox [value]="user"></p-tableCheckbox>
         </td>
         <td>{{ product.name }}</td>
         <td>{{ product.price | currency: 'USD' }}</td>
