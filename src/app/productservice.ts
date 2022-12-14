@@ -9,7 +9,7 @@ export class ProductService {
 
   productNames: string[] = [
     'Jesús Javier',
-    'Black Watch',
+    'Luis Gustavo',
     'Blue Band',
     'Blue T-Shirt',
     'Bracelet',
