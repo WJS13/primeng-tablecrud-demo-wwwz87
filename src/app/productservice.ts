@@ -8,8 +8,16 @@ export class ProductService {
   status: string[] = ['OUTOFSTOCK', 'INSTOCK', 'LOWSTOCK'];
 
   productNames: string[] = [
-    'Jesús Javier',
-    'Luis Gustavo',
+    'William Jesús',
+    'Luis Daniel',
+    'María Rosario',
+    'Giancarlo Javier',
+    'José Manuel',
+    'Ángel Imanhol',
+    'Gustavo Rafael',
+    'Irma Lucero',
+    'Marco Raúl',
+    'Joseph Paul'
   ];
   
   constructor(private http: HttpClient) {}
