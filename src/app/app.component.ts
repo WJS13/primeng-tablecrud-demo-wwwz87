@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Product } from './product';
-import { ProductService } from './productservice';
+import { User } from './user';
+import { UserService } from './userservice';
 import { ConfirmationService } from 'primeng/api';
 import { MessageService } from 'primeng/api';
 
