@@ -3,7 +3,7 @@
 		{
 			"id": 1,
 			"dni": 71816961,
-			"surname": "Salazar Llamoga"
+			"surname": "Salazar Llamoga",
 			"name": "William Jesús",
 			"age": 28,
 			"salary": 2600,
@@ -12,7 +12,7 @@
 		{
 			"id": 2,
 			"dni": 73331189,
-			"surname": "Galarreta Grados"
+			"surname": "Galarreta Grados",
 			"name": "Luis Daniel",
 			"age": 24,
 			"salary": 9100,
@@ -21,7 +21,7 @@
 		{
 			"id": 3,
 			"dni": 70874795,
-			"surname": "Trujillo Guevara"
+			"surname": "Trujillo Guevara",
 			"name": "María Rosario",
 			"age": 20,
 			"salary": 1200,
@@ -30,7 +30,7 @@
 		{
 			"id": 4,
 			"dni": 73874144,
-			"surname": "Sánchez Briceño"
+			"surname": "Sánchez Briceño",
 			"name": "Giancarlo Javier",
 			"age": 30,
 			"salary": 2300,
@@ -39,7 +39,7 @@
 		{
 			"id": 5,
 			"dni": 77795738,
-			"surname": "Pita Rojas"
+			"surname": "Pita Rojas",
 			"name": "José Manuel",
 			"age": 22,
 			"salary": 1800,
@@ -48,7 +48,7 @@
 		{
 			"id": 6,
 			"dni": 71521529,
-			"surname": "Paredes Castillo"
+			"surname": "Paredes Castillo",
 			"name": "Ángel Imanhol",
 			"age": 25,
 			"salary": 5700,
@@ -57,7 +57,7 @@
 		{
 			"id": 7,
 			"dni": 71017373,
-			"surname": "Pérez García"
+			"surname": "Pérez García",
 			"name": "Gustavo Rafael",
 			"age": 24,
 			"salary": 6000,
@@ -66,7 +66,7 @@
 		{
 			"id": 8,
 			"dni": 72720364,
-			"surname": "Iparraguirre Vargas"
+			"surname": "Iparraguirre Vargas",
 			"name": "Irma Lucero",
 			"age": 22,
 			"salary": 4500,
@@ -75,7 +75,7 @@
 		{
 			"id": 9,
 			"dni": 75505929,
-			"surname": "Vilchez Requelme"
+			"surname": "Vilchez Requelme",
 			"name": "Marco Raúl",
 			"age": 28,
 			"salary": 8000,
@@ -84,7 +84,7 @@
 		{
 			"id": 10,
 			"dni": 74400242,
-			"surname": "Ugarte Gomez"
+			"surname": "Ugarte Gomez",
 			"name": "Joseph Paul",
 			"age": 29,
 			"salary": 10100,
