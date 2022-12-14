@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 import { NgxEchartsModule } from 'ngx-echarts';
 
 import { AppComponent } from './app.component';
-import { ProductService } from './productservice';
+import { UserService } from './userservice';
 import { PieComponent } from './components/pie/pie.component';
 
 import { TableModule } from 'primeng/table';
@@ -62,6 +62,6 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
   ],
   declarations: [AppComponent, PieComponent],
   bootstrap: [AppComponent],
-  providers: [ProductService, MessageService, ConfirmationService],
+  providers: [UserService, MessageService, ConfirmationService],
 })
 export class AppModule {}
