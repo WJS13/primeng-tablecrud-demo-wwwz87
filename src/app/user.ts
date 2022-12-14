@@ -1,4 +1,4 @@
-export interface Username {
+export interface User {
     id?:string;
     dni?:number;
     suername?:string;
