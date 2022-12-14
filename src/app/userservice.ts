@@ -4,10 +4,10 @@ import { Injectable } from '@angular/core';
 import { User } from './user';
 
 @Injectable()
-export class ProductService {
+export class UserService {
   status: string[] = ['OUTOFSTOCK', 'INSTOCK', 'LOWSTOCK'];
 
-  productNames: string[] = [
+  userNames: string[] = [
     'William Jesús',
     'Luis Daniel',
     'María Rosario',
@@ -24,49 +24,49 @@ export class ProductService {
 
   getProductsSmall() {
     return this.http
-      .get<any>('assets/products-small.json')
+      .get<any>('assets/users-small.json')
       .toPromise()
-      .then((res) => <Product[]>res.data)
+      .then((res) => <User[]>res.data)
       .then((data) => {
         return data;
       });
   }
 
-  getProducts() {
+  getUsers() {
     return this.http
-      .get<any>('assets/products.json')
+      .get<any>('assets/users.json')
       .toPromise()
-      .then((res) => <Product[]>res.data)
+      .then((res) => <User[]>res.data)
       .then((data) => {
         return data;
       });
   }
 
-  getProductsWithOrdersSmall() {
+  getUsersWithOrdersSmall() {
     return this.http
-      .get<any>('assets/products-orders-small.json')
+      .get<any>('assets/users-orders-small.json')
       .toPromise()
-      .then((res) => <Product[]>res.data)
+      .then((res) => <User[]>res.data)
       .then((data) => {
         return data;
       });
   }
 
-  generatePrduct(): Product {
-    const product: Product = {
+  generateUser(): User {
+    const user: User = {
       id: this.generateId(),
       name: this.generateName(),
-      description: 'Product Description',
+      description: 'User Description',
       price: this.generatePrice(),
       quantity: this.generateQuantity(),
-      category: 'Product Category',
+      category: 'User Category',
       inventoryStatus: this.generateStatus(),
       rating: this.generateRating(),
     };
 
-    product.image =
-      product.name.toLocaleLowerCase().split(/[ ,]+/).join('-') + '.jpg';
-    return product;
+    user.image =
+      user.name.toLocaleLowerCase().split(/[ ,]+/).join('-') + '.jpg';
+    return user;
   }
 
   generateId() {
@@ -82,7 +82,7 @@ export class ProductService {
   }
 
   generateName() {
-    return this.productNames[Math.floor(Math.random() * Math.floor(30))];
+    return this.UserNames[Math.floor(Math.random() * Math.floor(30))];
   }
 
   generatePrice() {
