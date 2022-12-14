@@ -32,11 +32,11 @@ export class PieComponent implements OnInit {
         center: ['50%', '50%'],
         selectedMode: 'single',
         data: [
-          { value: 737, name: 'Clase A' },
-          { value: 510, name: 'Clase B' },
-          { value: 434, name: 'Clase C' },
-          { value: 335, name: 'Clase D' },
-          { value: 1548, name: 'Clase E' },
+          { value: 1, name: 'Clase A' },
+          { value: 1, name: 'Clase B' },
+          { value: 3, name: 'Clase C' },
+          { value: 4, name: 'Clase D' },
+          { value: 1, name: 'Clase E' },
         ],
         emphasis: {
           itemStyle: {
